@@ -1,12 +1,12 @@
 import { Grid } from "@mui/material";
 import { Button, Modal, Result } from "antd";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import QuantidadePessoa from "../select";
-import axios from "axios";
-import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import Carregar from "../carregar";
+import QuantidadePessoa from "../select";
 
 const ModalImport: React.FC = () => {
   const [open, setOpen] = useState(true);
@@ -151,21 +151,14 @@ const ModalImport: React.FC = () => {
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
-            width: "auto",
           }}
         >
           <iframe
-            style={{
-              border: 0,
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-
-              width: "100%",
-              height: "100%",
-            }}
-            allow="fullscreen"
-            src="https://www.canva.com/design/DAGOPhiRGxA/8KB4FKCcDVGHLpM97HfMSw/view?embed"
+            src="https://docs.google.com/viewer?srcid=1-khyPz1IK4FArgMpwmSk7G2tmPJM-71m&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+            style={{ border: 0 }}
+            width={"100%"}
+            height={"100%"}
+            allowFullScreen
           />
         </div>
       ) : (
