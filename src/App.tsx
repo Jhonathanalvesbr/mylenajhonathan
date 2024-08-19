@@ -3,6 +3,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import ModalImport from "./components/modal";
+import VideoBackground from "./components/video/VideoBackground";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<ModalImport />} />
           <Route index element={<ModalImport />} />
           <Route path="/:id" element={<ModalImport />} />
+          <Route path="/pre-wedding/video" element={<VideoBackground />} />
         </Routes>
       </BrowserRouter>
     </>
