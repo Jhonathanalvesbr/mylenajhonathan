@@ -11,9 +11,21 @@ const Carregar = () => {
         style={{ height: "100%" }}
       >
         <Grid item xs={12}>
-          <p style={{ width: "80%", textAlign: "center", color:"#737373", fontWeight:600 }}>Carregando...</p>
+          <p
+            style={{
+              width: "100%",
+              textAlign: "center",
+              color: "#737373",
+              fontWeight: 600,
+            }}
+          >
+            Carregando...
+          </p>
 
-          <span className="loader" style={{ background: "#737373" }} />
+          <span
+            className="loader"
+            style={{ background: "#737373", marginLeft: "8rem" }}
+          />
         </Grid>
       </Grid>
     </Container>
