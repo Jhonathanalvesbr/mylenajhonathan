@@ -51,7 +51,7 @@ const ModalImport: React.FC = () => {
           reset(valoresPadrao);
         })
         .finally(() => setCarregar(false));
-  }, []);
+  }, [id, reset]);
 
   const handleOk = (values: any) => {
     setLoading(true);
