@@ -151,7 +151,7 @@ const ModalImport: React.FC = () => {
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
-            width: "100%",
+            width: "auto",
           }}
         >
           <iframe
@@ -161,7 +161,7 @@ const ModalImport: React.FC = () => {
               whiteSpace: "nowrap",
               overflow: "hidden",
 
-              width: "auto",
+              width: "100%",
               height: "100%",
             }}
             allow="fullscreen"
