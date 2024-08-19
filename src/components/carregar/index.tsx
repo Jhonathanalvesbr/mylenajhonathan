@@ -22,10 +22,7 @@ const Carregar = () => {
             Carregando...
           </p>
 
-          <span
-            className="loader"
-            style={{ background: "#737373", marginLeft: "8rem" }}
-          />
+          <span className="loader" style={{ background: "#737373" }} />
         </Grid>
       </Grid>
     </Container>

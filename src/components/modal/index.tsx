@@ -166,7 +166,7 @@ const ModalImport: React.FC = () => {
         </div>
       ) : (
         <Modal
-          title="Escolha a quantidade de acompanhantes"
+          title="Informe o seu nome completo e de seus acompanhantes"
           centered
           open={open}
           onCancel={handleCancel}

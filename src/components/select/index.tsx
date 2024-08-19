@@ -15,18 +15,18 @@ export default function QuantidadePessoa({
   const handleChange = (event: SelectChangeEvent) => {
     setConvidados(event.target.value);
   };
-  console.log(convidados)
+
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">
-          Quantidade de convidados
+          Selecione a quantidade de acompanhantes
         </InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={convidados}
-          label="Quantidade de convidados"
+          label="Selecione a quantidade de acompanhantes"
           onChange={handleChange}
         >
           <MenuItem value={1}>1</MenuItem>
@@ -52,42 +52,48 @@ export default function QuantidadePessoa({
           ) : (
             ""
           )}
-          {convidados && convidados !== "" ? [...Array(convidados)].map((_, i) => {
-            return (
-              <Grid item xs={12} key={i}>
-                <p
-                  style={{
-                    padding: 0,
-                    margin: 0,
-                    paddingBottom: ".5rem",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Nome completo
-                </p>
-
-                <Controller
-                  name={`Nome-${i}`}
-                  control={control}
-                  render={({ field: { ref, value, ...field } }) => (
-                    <TextField
-                      {...field}
-                      inputRef={ref}
-                      value={value || ""}
-                      size="small"
-                      fullWidth
-                      required
-                      placeholder={"Nome"}
-                      type="text"
-                      InputLabelProps={{
-                        shrink: value ? true : false,
+          {convidados && convidados !== "" ? (
+            <>
+              {[...Array(convidados)].map((_, i) => {
+                return (
+                  <Grid item xs={12} key={i}>
+                    <p
+                      style={{
+                        padding: 0,
+                        margin: 0,
+                        paddingBottom: ".5rem",
+                        fontWeight: "bold",
                       }}
+                    >
+                      {i === 0 ? "Seu nome completo" : "Nome do acompanhante"}
+                    </p>
+
+                    <Controller
+                      name={`Nome-${i}`}
+                      control={control}
+                      render={({ field: { ref, value, ...field } }) => (
+                        <TextField
+                          {...field}
+                          inputRef={ref}
+                          value={value || ""}
+                          size="small"
+                          fullWidth
+                          required
+                          placeholder= {i === 0 ? "Seu nome completo" : "Nome do acompanhante"}
+                          type="text"
+                          InputLabelProps={{
+                            shrink: value ? true : false,
+                          }}
+                        />
+                      )}
                     />
-                  )}
-                />
-              </Grid>
-            );
-          }): ""}
+                  </Grid>
+                );
+              })}
+            </>
+          ) : (
+            ""
+          )}
         </Grid>
       ) : (
         ""
