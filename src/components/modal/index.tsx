@@ -41,10 +41,8 @@ const ModalImport: React.FC = () => {
         .then((r: any) => {
           const valoresPadrao = r?.data?.nomes?.reduce(
             (acc: any, v: any, i: any) => {
-              if (i < convidado) {
-                acc[`Nome-${i}`] = v;
-                return acc;
-              }
+              acc[`Nome-${i}`] = v;
+              return acc;
             },
             {}
           );
@@ -57,7 +55,11 @@ const ModalImport: React.FC = () => {
 
   const handleOk = (values: any) => {
     setLoading(true);
-    const data = Object.keys(values).map((key) => values[key]);
+    const data = Object.keys(values).map((key, i) => {
+      if (+i < +convidado) {
+        return values[key];
+      }
+    });
     axios
       .post(
         "https://us-central1-jhonathanalves-br.cloudfunctions.net/confirmar",
@@ -158,7 +160,7 @@ const ModalImport: React.FC = () => {
               textOverflow: "ellipsis",
               whiteSpace: "nowrap",
               overflow: "hidden",
-              aspectRatio: "16 / 9",
+
               width: "auto",
               height: "100%",
             }}
