@@ -41,8 +41,10 @@ const ModalImport: React.FC = () => {
         .then((r: any) => {
           const valoresPadrao = r?.data?.nomes?.reduce(
             (acc: any, v: any, i: any) => {
-              acc[`Nome-${i}`] = v;
-              return acc;
+              if (i < convidado) {
+                acc[`Nome-${i}`] = v;
+                return acc;
+              }
             },
             {}
           );
@@ -148,7 +150,6 @@ const ModalImport: React.FC = () => {
             alignItems: "center",
             height: "100vh",
             width: "100%",
-            
           }}
         >
           <iframe
