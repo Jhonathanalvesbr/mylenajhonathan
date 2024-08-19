@@ -148,6 +148,7 @@ const ModalImport: React.FC = () => {
             alignItems: "center",
             height: "100vh",
             width: "100%",
+            
           }}
         >
           <iframe
@@ -157,8 +158,8 @@ const ModalImport: React.FC = () => {
               whiteSpace: "nowrap",
               overflow: "hidden",
               aspectRatio: "16 / 9",
-              width: "100%",
-              height: "auto",
+              width: "auto",
+              height: "100%",
             }}
             allow="fullscreen"
             src="https://www.canva.com/design/DAGOPhiRGxA/8KB4FKCcDVGHLpM97HfMSw/view?embed"
