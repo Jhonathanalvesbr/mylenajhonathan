@@ -154,7 +154,7 @@ const ModalImport: React.FC = () => {
           }}
         >
           <iframe
-            src="https://docs.google.com/viewer?srcid=1-khyPz1IK4FArgMpwmSk7G2tmPJM-71m&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+            src="https://docs.google.com/viewer?srcid=1B-PcyB8oSrIP0-wOK7zt_k48RAlsKFKl&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
             style={{ border: 0 }}
             width={"100%"}
             height={"100%"}
