@@ -11,10 +11,10 @@ function App() {
       <ToastContainer />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ModalImport />} />
-          <Route index element={<ModalImport />} />
+          <Route path="/" element={<VideoBackground />} />
+          <Route index element={<VideoBackground />} />
           <Route path="/:id" element={<ModalImport />} />
-          <Route path="/pre-wedding/video" element={<VideoBackground />} />
+          <Route path="/pre-wedding" element={<VideoBackground />} />
         </Routes>
       </BrowserRouter>
     </>
