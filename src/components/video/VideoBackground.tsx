@@ -9,7 +9,7 @@ const VideoBackground = () => {
         <div className="video-container">
             <video id="video" autoPlay muted loop controls>
                 <source
-                    src="https://storage.cloud.google.com/mylenaejhonathan/pre-wedding.mp4"
+                    src="https://storage.googleapis.com/mylenaejhonathan/pre-wedding.mp4"
                     type="video/mp4"
                 />
             </video>
