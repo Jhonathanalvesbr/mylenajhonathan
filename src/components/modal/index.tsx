@@ -127,7 +127,7 @@ const ModalImport: React.FC = () => {
                 >
                     <Result
                         status="info"
-                        title="Confime sua presença"
+                        title="Confime a sua presença"
                         extra={
                             <Button
                                 type="primary"
