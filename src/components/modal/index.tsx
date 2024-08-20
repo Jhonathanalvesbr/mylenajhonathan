@@ -135,7 +135,7 @@ const ModalImport: React.FC = () => {
                                 style={{background: "#737373"}}
                                 onClick={() => setOpen(true)}
                             >
-                                Confirme sua presença
+                                Confirme a sua presença
                             </Button>
                         }
                     />
