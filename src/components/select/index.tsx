@@ -65,7 +65,7 @@ export default function QuantidadePessoa({
                                                 fontWeight: "bold",
                                             }}
                                         >
-                                            {i === 0 ? "Seu nome completo" : "Nome do acompanhante"}
+                                            {i === 0 ? "Seu nome completo" : "Nome do acompanhante completo"}
                                         </p>
 
                                         <Controller
