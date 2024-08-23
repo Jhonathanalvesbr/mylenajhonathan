@@ -18,7 +18,7 @@ const Carregar = () => {
               color: "#737373",
               fontWeight: 600,
               textShadow:
-                "1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff",
+                ".8px .8px 0 #fff, -.8px -.8px 0 #fff, .8px -.8px 0 #fff, -.8px .8px 0 #fff",
               letterSpacing: "2px",
             }}
           >
