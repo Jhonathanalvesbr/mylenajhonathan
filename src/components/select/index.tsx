@@ -79,7 +79,7 @@ export default function QuantidadePessoa({
                                                     size="small"
                                                     fullWidth
                                                     required
-                                                    placeholder={i === 0 ? "Seu nome completo" : "Nome do acompanhante"}
+                                                    placeholder={i === 0 ? "Seu nome completo" : "Nome do acompanhante completo"}
                                                     type="text"
                                                     InputLabelProps={{
                                                         shrink: value ? true : false,
