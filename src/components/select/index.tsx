@@ -20,7 +20,7 @@ export default function QuantidadePessoa({
         <Box sx={{minWidth: 120}}>
             <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">
-                    Selecione a quantidade de acompanhantes
+                    Selecione a quantidade de pessoas
                 </InputLabel>
                 <Select
                     labelId="demo-simple-select-label"
