@@ -71,6 +71,7 @@ const ModalImport: React.FC = () => {
         setFim(true);
         setOpen(false);
       })
+      .catch(() => toast.success("Erro ao confirmar"))
       .finally(() => setLoading(false));
   };
 
