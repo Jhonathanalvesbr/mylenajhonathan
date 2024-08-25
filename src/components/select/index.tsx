@@ -26,7 +26,7 @@ export default function QuantidadePessoa({
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     value={convidados}
-                    label="Selecione a quantidade de acompanhantes"
+                    label="Selecione a quantidade de pessoas"
                     onChange={handleChange}
                 >
                     <MenuItem value={1}>1</MenuItem>
