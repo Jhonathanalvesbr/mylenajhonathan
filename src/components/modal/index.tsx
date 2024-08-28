@@ -183,6 +183,7 @@ const ModalImport: React.FC = () => {
               control={control}
               convidados={convidado}
               setConvidados={setConvidado}
+              id={id}
             />
             <Grid
               container
