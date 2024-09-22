@@ -165,7 +165,7 @@ const ModalImport: React.FC = () => {
     ]);
 
     if (bloquear30Dias.has(id)) {
-      toast.success("Não foi possível confirmar");
+      toast.error("Não foi possível confirmar");
       return;
     }
 
