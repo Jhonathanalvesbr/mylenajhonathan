@@ -166,11 +166,17 @@ const ModalImport: React.FC = () => {
       "Gjpm5kNs",
       "eYSlvSYg",
       "mq3UN1Q2",
+      "a5nqAvES",
+      "8PRBdc1F",
+      "aSmy14Wf",
+      "y7fK33yN",
+      "CUfzEDrX",
+      "AlI4Q5ud",
     ]);
 
     if (existe === false && bloquear30Dias.has(id)) {
       toast.error("Não foi possível confirmar sua presença");
-      setLoading(false)
+      setLoading(false);
       return;
     }
 
