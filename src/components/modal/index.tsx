@@ -13,6 +13,7 @@ const ModalImport: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [carregar, setCarregar] = useState(true);
   const [valores_padrao, setValores_padrao] = useState({});
+  const [existe, setExiste] = useState(false);
   const [convidado, setConvidado] = useState(
     valores_padrao ? Object.keys(valores_padrao).length : ""
   );
@@ -46,6 +47,9 @@ const ModalImport: React.FC = () => {
             },
             {}
           );
+          if (valoresPadrao) {
+            setExiste(true);
+          }
           setValores_padrao(valoresPadrao);
           setConvidado(r?.data?.nomes?.length);
           reset(valoresPadrao);
@@ -164,8 +168,8 @@ const ModalImport: React.FC = () => {
       "mq3UN1Q2",
     ]);
 
-    if (bloquear30Dias.has(id)) {
-      toast.error("Não foi possível confirmar");
+    if (existe === false && bloquear30Dias.has(id)) {
+      toast.error("Não foi possível confirmar sua presença");
       return;
     }
 
