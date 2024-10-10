@@ -172,6 +172,7 @@ const ModalImport: React.FC = () => {
       "y7fK33yN",
       "CUfzEDrX",
       "AlI4Q5ud",
+      "FXL5DAsS"
     ]);
 
     if (existe === false && bloquear30Dias.has(id)) {
